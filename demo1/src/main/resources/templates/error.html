@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>error</title>
+</head>
+<body>
+errore
+<span th:if="${#fields.hasErrors('user')}" th:onerror="*{user}"></span>
+</body>
+</html>
