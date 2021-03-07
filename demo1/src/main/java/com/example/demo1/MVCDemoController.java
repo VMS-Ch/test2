@@ -36,6 +36,7 @@ public class MVCDemoController {
     public ModelAndView success() {
         ModelAndView modelAndView = new ModelAndView();
         ArrayList<User> users = new ArrayList<>();
+        System.out.println(111);
         users.add(new User(23, 1, "zms"));
         users.add(new User(24, 2, "vms"));
         modelAndView.addObject("userList", users);
